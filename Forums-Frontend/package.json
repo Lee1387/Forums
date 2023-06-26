@@ -1,0 +1,21 @@
+{
+  "name": "forums-frontend",
+  "private": true,
+  "description": "The frontend of a forums app made with the MERN stack.",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "Lee1387",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "vite": "^4.3.5"
+  }
+}
