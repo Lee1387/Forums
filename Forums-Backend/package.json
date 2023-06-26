@@ -1,0 +1,21 @@
+{
+  "name": "forums-backend",
+  "version": "1.0.0",
+  "description": "The backend of a forums app made with the MERN stack.",
+  "main": "index.js",
+  "type": "module",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Lee1387",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
