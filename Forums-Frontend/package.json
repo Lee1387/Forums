@@ -2,15 +2,20 @@
   "name": "forums-frontend",
   "version": "1.0.0",
   "description": "The frontend of a forums app made with the MERN stack.",
-  "main": "server/index.js",
+  "source": "./client/src/index.html",
+  "type": "module",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./client/src/index.html --dist-dir client/dist --public-url ./",
+    "client": "parcel"
   },
   "author": "Lee1387",
   "devDependencies": {
     "parcel": "^2.8.3",
+    "process": "^0.11.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-}
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
+  }
 }
