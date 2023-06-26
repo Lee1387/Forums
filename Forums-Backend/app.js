@@ -4,7 +4,7 @@ import express from "express";
 
 import { loginRouter } from "./routes/login-route.js";
 import { postsRouter } from "./routes/posts-route.js";
-import { usersRouter } from "./routes/user-route.js";
+import { usersRouter } from "./routes/users-route.js";
 
 const app = express();
 
