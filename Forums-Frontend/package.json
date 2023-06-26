@@ -1,0 +1,16 @@
+{
+  "name": "forums-frontend",
+  "version": "1.0.0",
+  "description": "The frontend of a forums app made with the MERN stack.",
+  "main": "server/index.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lee1387",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+}
+}
