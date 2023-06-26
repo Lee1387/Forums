@@ -1,14 +1,7 @@
-const loginOptions = async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "POST,OPTIONS,GET");
-    res.header("Access-Control-Allow-Headers", "content-type");
-    res.status(200);
-    res.json({ msg: "Preflight Passed" });
-};
+import { wrapper } from "./wrapper";
 
-const attemptLogin = async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    try {
+const attemptLogin = wrapper(async (req, res) => {
+    res.header("Access-Control-Allow-Origin", process.env.FRONTEND_ORIGIN);
         const username = req.body.username;
         const password = req.body.password;
         if (!username || !password) {
@@ -16,11 +9,6 @@ const attemptLogin = async (req, res) => {
         }
         res.status(200);
         res.json({ status: "Login Successful" });
-    } catch (error) {
-        console.log(error);
-        res.status(500);
-        res.json({ message: "There was an error processing your request." });
-    }
-};
+});
 
-export { loginOptions, attemptLogin };
+export { attemptLogin };
