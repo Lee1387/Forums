@@ -1,13 +1,19 @@
-import mongoose from mongoose;
+import mongoose from "mongoose";
 const { Schema, model } = mongoose;
 
 const reportSchema = new Schema(
     {
         messageId: {
             type: String,
+            required: true,
         },
         messageType: {
             type: String,
+            required: true,
+        },
+        reportedBy: {
+            type: String,
+            required: true,
         },
     },
     {
